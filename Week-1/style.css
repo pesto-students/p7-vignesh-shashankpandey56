@@ -1,98 +1,121 @@
-* {
-  font-family: "Lato";
+*{
+  font-family:"Lato";
 }
 
-.sidebar {
-  width: 5%;
-  height: 80%;
-  float: left;
-  background: white;
+.sidebar{
+  width:5%;
+  height:80%;
+  float:left;
+  background:white;
 }
-.sidebar a {
-  padding: 10px 20px;
-  margin-top: 45px;
-  text-decoration: none;
-  font-size: 20px;
-  color: black;
-  display: block;
+.sidebar a{
+  padding:10px 20px;
+  margin-top:45px;
+  font-size:20px;
+  color:black;
+  display:block;
 }
 
-.content {
-  float: right;
-  width: 95%;
-  margin-top: -8px;
+.content{
+  float:right;
+  width:95%;
+  margin-top:-8px;
 }
-.page {
-  height: 100%;
-  width: 100%;
+.page{
+  height:100%;
+  width:100%;
 }
-.first-ele {
-  width: 100%;
-  height: 200px;
-  background-color: #2b3636;
+.first-ele{
+  width:100%;
+  height:200px;
+  background-color:#2b3636;
 }
-.image {
-  width: 20%;
-  float: left;
-  margin-top: 20px;
-  margin-left: -50px;
+.image{
+  width:20%;
+  float:left;
+  margin-top:20px;
+  margin-left:-50px;
 }
-.first-content {
-  width: 80%;
-  float: right;
+.first-content{
+  width:80%;
+  float:right;
 }
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.center{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width:50%;
 }
-.buttons {
-  margin-top: 72px;
-  color: white;
+.buttons{
+  margin-top:72px;
+  color:white;
 }
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  margin-top: 10px;
-  font-weight: lighter;
+table{
+  font-family:arial, sans-serif;
+  border-collapse:collapse;
+  width:100%;
+  margin-top:10px;
+  font-weight:lighter;
 }
 
 td,
-th {
-  border: 0px solid #dddddd;
-  text-align: left;
-  padding: 8px;
+th{
+  border:0px solid #dddddd;
+  text-align:left;
+  padding:8px;
 }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
+tr:nth-child(even){
+  background-color:#dddddd;
 }
-.third-ele {
-  margin-top: 400px;
-  height: 200px;
-  background-color: #3679c9;
-  margin-left: -99px;
+.third-ele{
+  margin-top:400px;
+  height:200px;
+  background-color:#3679c9;
+  margin-left:-99px;
 }
-.image2 {
-  width: 20%;
-  float: left;
-  height: 100px;
-  margin-top: 20px;
-  margin-left: -50px;
+.image2{
+  width:20%;
+  float:left;
+  height:100px;
+  margin-top:20px;
+  margin-left:-50px;
 }
-.third-content {
-  width: 20%;
-  float: left;
-  margin-left: -75px;
-  margin-top: 30px;
+.third-content{
+  width:20%;
+  float:left;
+  margin-left:-75px;
+  margin-top:30px;
 }
-.buttons-3 {
-  margin-top: 72px;
+.buttons-3{
+  margin-top:72px;
+  color:white;
+  width:60%;
+  margin-top:150px;
+  float:right;
+}
+img{
+  width:150px;
+  height:150px;
+}
+div.buttons-3 > span{
+  padding-left:9%;
+  padding-right:9%;
+}
+div.third-content > h3{
+  color:white;
+}
+div.third-content > p{
+  margin-top:-10px;
   color: white;
-  width: 60%;
-  margin-top: 150px;
-
-  float: right;
+}
+div.first-content > h3{
+  color:white;
+}
+div.first-content >p{
+  margin-top:-10px;
+  color:white;
+}
+div.buttons >span{
+  padding-right:10px;
 }
