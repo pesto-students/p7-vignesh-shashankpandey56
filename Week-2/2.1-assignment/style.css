@@ -1,0 +1,132 @@
+*{
+    font-family:"Lato";
+    margin:0px;
+  }
+
+.heading-box{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    position: relative;
+    padding: 1%;
+
+}  
+
+.content-box{
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: space-around;
+    padding:1%;
+
+}
+.left-content{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+.right-content{
+    display: flex;
+    width: 40%;
+   
+    flex-direction: column;
+}
+.second-content-box{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    position: relative;
+    padding:1%;
+}
+.right-content >h3{
+margin: 3px 0px;
+}
+
+#registration-page {
+    display:flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    padding:1%;
+}
+.signup-form  {
+    flex:1;
+    max-width:700px;
+    border-radius: 10px;
+    border: 1px solid #999;
+} 
+.form-header {
+    padding:15px 0;
+    border-bottom:1px solid #cccccc;
+}
+.form-header >h1 {
+    font-size: 28px;
+    text-align:center;
+    color:#666;
+}
+.form-body {
+    background:white;
+    padding:5px 10px;
+}
+.row {
+    display:flex;
+    
+}
+.input-group {
+    flex:1;  
+    display:flex;
+    flex-direction:column; 
+    margin: 10px 5px;
+}
+label {
+    color:black;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="checkbox"] {
+  font-size: 18px;
+  height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #666;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  background: white;
+  outline: none;
+}
+.radio-group {
+    display:flex;
+}
+.radio-group div {
+    flex:1;
+ }
+.form-footer {
+    display:flex;
+    justify-content: space-around;
+}
+.btn {
+    padding:15px 40px;
+    background-color: #1BBA93;
+    font-size:17px;
+    border:none;
+    border-radius:5px;
+    color:#bcf5e7;
+    cursor:pointer;
+}
+a{
+    color: purple;
+}
+img{
+    height: 150px;
+    width: 250px;
+}
+@media only screen and (max-width: 600px) {
+    .row{
+      flex-direction:column; 
+    }
+}

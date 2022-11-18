@@ -2,9 +2,9 @@
     display: flex;
     width: 200px;
     height: 200px;
-    /* background-color: aqua; */
-    margin-left: 40%;
-    margin-top: 10%;
+    position: relative;
+    top:300px;
+    left:850px;
     flex-wrap: wrap;
 }
 .main:hover > .first-box{
@@ -21,9 +21,7 @@
     transform: translate(100%, 0%) rotate(-90deg);
 }
 .main:hover > h3{
-    display: "";
-    margin-top: 50px;
-   margin-left:50px;
+   opacity: 100;
 }
 
 .first-box{
@@ -31,7 +29,6 @@
     height: 100px;
     width:100px;
     background-color:red;
-    
     transition-duration: 2s;
 
 }
@@ -39,7 +36,7 @@
     display: flex;
     height: 100px;
     width:100px;
-    background-color:green;
+    background-color:yellow;
     transition-duration: 2s;
     
 
@@ -48,7 +45,7 @@
     display: flex;
     width:100px;
     height:100px;
-    background-color:brown;
+    background-color:blue;
     transition-duration: 2s;
    
 
@@ -58,13 +55,13 @@
     display: flex;
     height: 100px;
     width:100px;
-    background-color:rebeccapurple;
+    background-color:green;
     transition-duration: 2s;
    
 
 }
 h3{
-   display: none;
-   margin-top: 50px;
-   margin-left:50px;
+    margin-top: -6em;
+    margin-left: 5em;
+    z-index: -1;
 }
