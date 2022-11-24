@@ -22,8 +22,8 @@ log();
 
 /* 
 first time when we run create Increment function on line number 16 the message property has set and it has taken value of
- count from their local scope which is defined on line number 2 and this function returns two function increment and log.
- Now we are calling increment fucntion 3 times and the value of count is increasing by one so count value actually is not 4
+ count(count =0) from their local scope which is defined on line number 2 .Now value of message is "Count is 0" and this function returns two function increment and log.
+ Now we are calling increment fucntion 3 times and the value of count is increasing by one so count value actually is not 
  present in the local scope of increment function then it will go to the parent scope which is scope of createIncrement 
  function and increment function will update that value and 1 and when we call that function 3 time count value increased by 3.
  When we call log function which is logging message variable only which is set at the time of createIncrement function call at that
