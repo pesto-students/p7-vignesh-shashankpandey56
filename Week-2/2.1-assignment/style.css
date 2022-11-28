@@ -2,7 +2,10 @@
     font-family:"Lato";
     margin:0px;
   }
-
+.main{
+    display: flex;
+    flex-direction: column;
+}
 .heading-box{
     display: flex;
     width:100%;
@@ -85,10 +88,7 @@ label {
     font-weight: 500;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="checkbox"] {
+input {
   font-size: 18px;
   height: 34px;
   padding-left: 10px;
@@ -128,5 +128,23 @@ img{
 @media only screen and (max-width: 600px) {
     .row{
       flex-direction:column; 
+    }
+    .content-box{
+        flex-direction: column;
+        
+        
+    }
+    .second-content-box{
+        flex-direction: column;
+    
+    }
+    .signup-form  {
+        max-width:300px;
+    } 
+    .left-content{
+        width: 100%;
+    }
+    .right-content{
+        width:100%;
     }
 }
