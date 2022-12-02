@@ -13,7 +13,7 @@ function createIncrement(){
     return [increment,log]
 }
 
-const [increment,log] = createIncrement()
+const [increment,log] = Object.freeze(createIncrement())
 
 increment();
 increment();

@@ -1,8 +1,9 @@
 const dict={}
 function memoize(){
     return function(...args){
-        const key = args.join(' ')
-        if (Object.hasOwn(dict,key)){
+        const key = args.sort().join(' ')
+        console.log(key)
+        if (Object.hasOwnProperty(dict,key)){
             return dict[key]
         }
         else{
@@ -22,15 +23,7 @@ function add(a,b){
 }
 
 const memoizeAdd = memoize(add)
-console.time()
-console.log(memoizeAdd(100,100))
-console.timeEnd()
-console.time()
-console.log(memoizeAdd(100,100))
-console.timeEnd()
-console.time()
+console.log(memoizeAdd(100,100,200))
+console.log(memoizeAdd(100,200,100))
 console.log(memoizeAdd(10,200))
-console.timeEnd()
-console.time()
 console.log(memoizeAdd(10,200))
-console.timeEnd()
