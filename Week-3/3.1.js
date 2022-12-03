@@ -2,25 +2,22 @@ const dict={}
 function memoize(){
     return function(...args){
         const key = args.sort().join(' ')
-        console.log(key)
         if (Object.hasOwnProperty(dict,key)){
             return dict[key]
         }
         else{
-            sum =0
-            args.forEach(ele=>{
-                sum+=ele
-
-            })
-            dict[key]= sum
-            return sum
+            dict[key]= add(...args)
+            return dict[key]
         }
     }
 
 }
-function add(a,b){
-    return a+b;
+function add(){
+    let arr = [...arguments]
+    console.log(arr)
+    return arr.reduce((acc,curr)=>acc+= curr,0);
 }
+
 
 const memoizeAdd = memoize(add)
 console.log(memoizeAdd(100,100,200))
