@@ -1,0 +1,67 @@
+.main{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top:300px;
+    left:850px;
+    flex-wrap: wrap;
+}
+.main:hover > .first-box{
+    transform: translate(-100%, 0%) rotate(90deg);
+    
+}
+.main:hover > .second-box{
+    transform: translate(100%, 0%) rotate(-90deg);
+}
+.main:hover >.third-box{
+    transform: translate(-100%, 0%) rotate(90deg);
+}
+.main:hover > .fourth-box {
+    transform: translate(100%, 0%) rotate(-90deg);
+}
+.main:hover > h3{
+   opacity: 100;
+}
+
+.first-box{
+    display: flex;
+    height: 100px;
+    width:100px;
+    background-color:red;
+    transition-duration: 2s;
+
+}
+.second-box{
+    display: flex;
+    height: 100px;
+    width:100px;
+    background-color:yellow;
+    transition-duration: 2s;
+    
+
+}
+.third-box{
+    display: flex;
+    width:100px;
+    height:100px;
+    background-color:blue;
+    transition-duration: 2s;
+   
+
+
+}
+.fourth-box{
+    display: flex;
+    height: 100px;
+    width:100px;
+    background-color:green;
+    transition-duration: 2s;
+   
+
+}
+h3{
+    margin-top: -6em;
+    margin-left: 5em;
+    z-index: -1;
+}
