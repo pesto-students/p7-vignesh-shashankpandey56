@@ -1,0 +1,29 @@
+.App {
+  display: flex;
+  justify-content: center;
+}
+.todo-list{
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  
+}
+.todo{
+  display: flex;
+  flex-basis: auto;
+  padding: 10px;
+  color:cadetblue;
+  background-color: bisque;
+}
+.add-todo > form{
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+  color: blue;
+
+}
+.add-todo>form> button{
+  background-color:rgb(86, 86, 216);
+  padding:3px;
+  border-radius: 3px;
+}
