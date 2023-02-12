@@ -6,9 +6,9 @@ function App() {
   {text:"learn react",completed:false},
   {text:"learn node js",completed:false}])
   const addTodo = text => {
-    const newTodos = [...todos, { text }];
+    const newTodos = [...todos, { text ,completed:false}];
     setTodos(newTodos);
-  };
+};
 
   const completeTodo = index => {
     const newTodos = [...todos];
@@ -17,31 +17,31 @@ function App() {
   };
  
   return (
-    <div className="app">
+    <div className="App">
       <div className="todo-list">
         {todos.map((todo,index) => (
           <div
             className="todo"
             style={{ textDecoration: todo.completed ? "line-through" : "" }}
-            key={index}
             onClick={() => completeTodo(index)}
           >
             {todo.text}
           </div>
         ))}
-        <div className="add-todo">
-          <form onSubmit={e => {
-            e.preventDefault();
-            addTodo(e.target.elements.todo.value);
-            e.target.elements.todo.value = "";
-          }}>
-            <input type="text" name="todo" />
-            <button type="submit">Add Todo</button>
-          </form>
-        </div>
+          <div className="add-todo">
+            <form onSubmit={e => {
+              e.preventDefault();
+              addTodo(e.target.elements.todo.value);
+              e.target.elements.todo.value = "";
+            }}>
+              <input type="text" name="todo" />
+              <button type="submit">Add Todo</button>
+            </form>
+          </div>
       </div>
     </div>
   );
+  
 }
 
 export default App;
